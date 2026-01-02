@@ -1,0 +1,41 @@
+--- QUICK GUIDE ---
+-------------------
+Start the server
+php server.php on
+Expected output: “Server is running!” (or OK message)
+
+----------------
+Stop the server
+php server.php off
+Expected output: “Server has been terminated!”
+
+------------
+Check status
+php server.php status
+Expected output: “ON” or “OFF” via defined messages
+
+----------------
+View configuration
+php server.php config
+Output: list of attributes/values and the ABOUT message
+
+----------------------
+Set attribute/value
+php server.php set <attribute> <new value>
+Example: php server.php set DOCROOT /var/www/my_site
+Output: “Change made successfully” or input syntax error message
+
+------------------
+Restart server
+php server.php restart
+Process: stop the server, wait, start again, show status messages
+
+-----------------------------
+Show full configuration
+php server.php config
+
+FAST NOTES
+
+- The built-in server is for development; do not use in production.
+- The script depends on Composer and autoload (vendor/autoload.php).
+- Make sure the Serve class and its methods (on, off, status, set, etc.) are available.
