@@ -11,7 +11,7 @@ PHP script managing a PHP built-in server.
 
 ## COMPOSER
 
-- after git clone, run **composer update**
+- after git clone, run **composer init**
 
 ## GIT
 
